@@ -33,8 +33,10 @@ This project implements an ML-based UAV fault detection system trained to classi
 ![Frontend 3](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_3.png)
 ![Frontend 4](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_4.png)
 
+
 ### Backend – API Logs
 ![Backend Logs](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/backend_logs.png)
+
 
 
 ---
