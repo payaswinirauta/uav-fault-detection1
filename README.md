@@ -25,15 +25,17 @@ Predicts potential faults in **real time** via a **FastAPI backend** with an int
 ## 📸 Demo / Screenshots
 
 This project implements an ML-based UAV fault detection system trained to classify **fault vs no-fault** conditions using sensor data.
+---
 
 ### Frontend – Real-Time Prediction
-![Frontend Prediction 1](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/screenshots/frontend_1.png)
-![Frontend Prediction 2](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/screenshots/frontend_2.png)
-![Frontend Prediction 3](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/screenshots/frontend_3.png)
-![Frontend Prediction 4](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/screenshots/frontend_4.png)
+![Frontend 1](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_1.png)
+![Frontend 2](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_2.png)
+![Frontend 3](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_3.png)
+![Frontend 4](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/frontend_4.png)
 
 ### Backend – API Logs
-![Backend Logs](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/screenshots/backend_logs.png)
+![Backend Logs](https://raw.githubusercontent.com/payaswinirauta/uav-fault-detection/main/backend_logs.png)
+
 
 ---
 
