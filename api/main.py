@@ -30,8 +30,11 @@ app.add_middleware(
 if os.path.exists("static"):
     app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Load the trained model
-MODEL_PATH = "../models/uav_fault_model.pkl"
+# Absolute path to the project root
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Build correct model path
+MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "uav_fault_model.pkl")
 try:
     model = joblib.load(MODEL_PATH)
     print("Model loaded successfully.")
@@ -39,6 +42,24 @@ except FileNotFoundError:
     print(f"Model file not found at {MODEL_PATH}. Please check the path.")
 except Exception as e:
     print(f"Error loading model: {e}")
+
+
+    # ------------------------------
+# ADD detect_fault FUNCTION HERE
+# ------------------------------
+def detect_fault(data):
+    X_input = [[
+        data.motor_rpm,
+        data.gyro_x,
+        data.gyro_y,
+        data.gyro_z,
+        data.accel_x,
+        data.accel_y,
+        data.accel_z
+    ]]
+    prediction = model.predict(X_input)
+    return prediction[0]
+# ------------------------------
 
 # Input schema for drone sensor data
 class DroneData(BaseModel):
